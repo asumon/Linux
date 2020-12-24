@@ -1,0 +1,51 @@
+Delivered-To: asumon@gmail.com
+Received: by 10.103.168.4 with SMTP id v4cs12384muo;
+        Mon, 23 Nov 2009 22:35:56 -0800 (PST)
+Received: by 10.204.25.76 with SMTP id y12mr5705109bkb.13.1259044556446;
+        Mon, 23 Nov 2009 22:35:56 -0800 (PST)
+Return-Path: <root@mail.mimtex.com>
+Received: from smtp.agni.com (smtp.agni.com [202.53.160.4])
+        by mx.google.com with ESMTP id e17si6708199fke.53.2009.11.23.22.35.55;
+        Mon, 23 Nov 2009 22:35:55 -0800 (PST)
+Received-SPF: neutral (google.com: 202.53.160.4 is neither permitted nor denied by best guess record for domain of root@mail.mimtex.com) client-ip=202.53.160.4;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 202.53.160.4 is neither permitted nor denied by best guess record for domain of root@mail.mimtex.com) smtp.mail=root@mail.mimtex.com
+Received: from [116.68.204.170] (helo=mail.mimtex.com)
+	by smtp.agni.com with esmtp (Exim 4.69)
+	(envelope-from <root@mail.mimtex.com>)
+	id 1NCpw3-0004IA-QM
+	for asumon@gmail.com; Tue, 24 Nov 2009 13:35:39 +0600
+Received: from mail.mimtex.com (localhost.localdomain [127.0.0.1])
+	by mail.mimtex.com (Postfix) with ESMTP id 9B9838B7D2
+	for <asumon@gmail.com>; Tue, 24 Nov 2009 13:35:25 +0600 (BDT)
+Received: (from root@localhost)
+	by mail.mimtex.com (8.14.2/8.14.2/Submit) id nAO7ZPt3017979
+	for asumon@gmail.com; Tue, 24 Nov 2009 13:35:25 +0600
+Date: Tue, 24 Nov 2009 13:35:25 +0600
+From: root <root@mail.mimtex.com>
+Message-Id: <200911240735.nAO7ZPt3017979@mail.mimtex.com>
+To: asumon@gmail.com
+Subject: Mail User Created
+MIME-Version: 1.0
+X-AGNI-MailScanner-Information: Please contact the ISP for more information
+X-AGNI-MailScanner-ID: 1NCpw3-0004IA-QM
+X-AGNI-MailScanner: Found to be clean
+X-AGNI-MailScanner-From: root@mail.mimtex.com
+X-Spam-Status: No
+
+#!/bin/bash
+for i in  $(< user)
+do
+/usr/sbin/useradd -s /sbin/nologin $i
+#/usr/sbin/userdel -r $i
+#echo $i
+echo $"1234" | passwd --stdin "$i"
+echo password for user $i is $i123
+#/usr/bin/passwd $i
+done
+echo "All user create is done"
+
+-- 
+This message has been scanned for viruses and
+dangerous content by Agni Systems, and is
+believed to be clean.
+
