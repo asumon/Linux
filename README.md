@@ -7,3 +7,4 @@
  Apache Http Server
  SquireMail 
 #  Ip Table firewall 
+@https://github.com/asumon/Linux/blob/main/IP%20RULES%20of%20ASROTEX.eml
